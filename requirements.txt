@@ -17,7 +17,7 @@ MarkupSafe==1.1.1
 marshmallow==3.9.1
 marshmallow-sqlalchemy==0.24.1
 mccabe==0.6.1
-mysqlclient @ file:///C:/Users/Jose/mysqlclient-1.4.6-cp39-cp39-win_amd64.whl
+#mysqlclient @ file:///C:/Users/Jose/mysqlclient-1.4.6-cp39-cp39-win_amd64.whl
 pipenv==2020.11.15
 pylint==2.6.0
 PyMySQL==0.10.1
