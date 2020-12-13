@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="col-md-4 offset-md-4">
+    <div class="card card-body">
+        <form action="/update/{{ alarm.id }}" method="POST">
+            <div class="form-group">
+                <input type="text" name="hours" placeholder="Hours" value="{{ alarm.hours}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="minutes" placeholder="Minutes" value="{{ alarm.minutes}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="seconds" placeholder="Seconds" value="{{ alarm.seconds}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" name="day" placeholder="Day" value="{{ alarm.day}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="pill1" placeholder="Pill1" value="{{ alarm.pill1}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="pill2" placeholder="Pill2" value="{{ alarm.pill2}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="number" name="pill3" placeholder="Pill3" value="{{ alarm.pill3}}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-block">
+                    Save
+                </button>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+{% endblock %}
